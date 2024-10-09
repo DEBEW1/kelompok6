@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOES STORE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        
+        .hero-section {
+            background: linear-gradient(135deg, #f7f7f2 0%, #e8e8e0 100%);
+        }
+        
+        .logo {
+            max-width: 120px;
+            transition: transform 0.3s;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .nav-link {
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #8b26a4;
+        }
+        
+        .shop-now-btn {
+            background-color: #8b26a4;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .shop-now-btn:hover {
+            background-color: #6b1d7e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .hero-image {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .hero-text {
+            animation: slideIn 1s ease-out;
+        }
+        
+        .cart-icon {
+            transition: transform 0.3s;
+        }
+        
+        .cart-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        
+        .back-to-top {
+            transition: all 0.3s;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header class="py-4 shadow-sm">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo">
+                <img src="gambar/sneakers-logo-design-template-free-a15eea7aaaff43026d39b3c0ac5f4915_screen.jpg" alt="Organic Store Logo" class="w-full">
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%201%20yang%20dijual" 
+                   class="inline-block rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:ring" 
+                   target="_blank">
+                    Hubungi Admin
+                </a>
+                <div class="flex items-center">
+                    <span class="mr-2 font-medium">$0.00</span>
+                    <div class="relative cart-icon">
+                        <span class="absolute -top-1 -right-1 bg-indigo-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs transition-all duration-300">0</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section py-16">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 hero-image">
+                    <img src="gambar/pexels-joaquin-carfagna-3131171-17626392.jpg" alt="Organic Products" class="w-1/2 mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12 hero-text">
+                    <h2 class="text-xl text-indigo-600 mb-2 font-semibold">Tempatnya Sneekers Terkeren</h2>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Langkah Penuh Gaya Dimulai Dari Sini</h1>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Melangkah dengan percaya diri, karena setiap sepatu punya cerita. Pilih sneakers yang cocok dengan gayamu dan buat dunia tahu siapa kamu! #SneakerHeads #LevelUpYourLook #StreetStyleVibes</p>
+                    <a href="bahan awal.html" class="shop-now-btn inline-block">Belanja Sekarang</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100">
+        <div class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
+          <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+          </div>
+      
+          <div class="lg:flex lg:items-end lg:justify-between">
+            <div>
+              <div class="flex justify-center text-indigo-600 lg:justify-start font-bold text-2xl">
+                Shoes Store
+              </div>
+      
+              <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
+                cum itaque neque.
+              </p>
+            </div>
+      
+            <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
+              <li>
+                <a class="text-gray-700 transition hover:text-indigo-600" href="#"> About </a>
+              </li>
+              <li>
+                <a class="text-gray-700 transition hover:text-indigo-600" href="#"> Services </a>
+              </li>
+              <li>
+                <a class="text-gray-700 transition hover:text-indigo-600" href="#"> Projects </a>
+              </li>
+              <li>
+                <a class="text-gray-700 transition hover:text-indigo-600" href="#"> Blog </a>
+              </li>
+            </ul>
+          </div>
+      
+          <p class="mt-12 text-center text-sm text-gray-500 lg:text-right">
+            Copyright &copy; 2024. All rights reserved.
+          </p>
+        </div>
+    </footer>
+</body>
+</html>

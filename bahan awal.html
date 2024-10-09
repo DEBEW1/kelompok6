@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Unggulan</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #4f4f4f;
+            margin-bottom: 40px;
+        }
+    
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+    
+        .product {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+    
+        .product:hover {
+            transform: scale(1.05);
+        }
+    
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    
+        .product h3 {
+            font-size: 1.5rem;
+            margin: 20px;
+            color: #333;
+        }
+    
+        .product p {
+            margin: 0 20px 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    
+        .product p.harga {
+            font-weight: bold;
+            color: #000;
+        }
+    
+        .whatsapp-button {
+            display: inline-block;
+            margin: 0 20px 20px;
+            padding: 10px 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+    
+        .whatsapp-button:hover {
+            background-color: #1ebe57;
+        }
+    
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+    
+            .product {
+                margin-bottom: 20px;
+            }
+        }
+        .back-button {
+        display: inline-block;
+        margin: 40px auto;
+        padding: 10px 20px;
+        background-color: #4f4f4f; 
+        color: white; 
+        border-radius: 25px; 
+        font-size: 0.9rem; 
+        text-align: center;
+        text-decoration: none; 
+        transition: background-color 0.3s ease; 
+    }
+
+    .back-button:hover {
+        background-color: #333; 
+    }
+
+        footer {
+            background-color: #f8f8f8;
+            color: #666;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8em;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+    
+    <div class="container">
+        <h2>Produk Unggulan</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="/api/placeholder/300/200" alt="Produk 1">
+                <h3>Produk 1</h3>
+                <p>Deskripsi produk 1 di sini.</p>
+                <p class="harga">Harga: Rp 100.000</p>
+                <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%201%20yang%20dijual" class="whatsapp-button" target="_blank">Beli Sekarang</a>
+            </div>
+            <div class="product">
+                <img src="/api/placeholder/300/200" alt="Produk 2">
+                <h3>Produk 2</h3>
+                <p>Deskripsi produk 2 di sini.</p>
+                <p class="harga">Harga: Rp 150.000</p>
+                <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%202%20yang%20dijual" class="whatsapp-button" target="_blank">Beli Sekarang</a>
+            </div>
+            <div class="product">
+                <img src="/api/placeholder/300/200" alt="Produk 3">
+                <h3>Produk 3</h3>
+                <p>Deskripsi produk 3 di sini.</p>
+                <p class="harga">Harga: Rp 150.000</p>
+                <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%203%20yang%20dijual" class="whatsapp-button" target="_blank">Beli Sekarang</a>
+            </div>
+            <div class="product">
+                <img src="/api/placeholder/300/200" alt="Produk 4">
+                <h3>Produk 4</h3>
+                <p>Deskripsi produk 4 di sini.</p>
+                <p class="harga">Harga: Rp 150.000</p>
+                <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%204%20yang%20dijual" class="whatsapp-button" target="_blank">Beli Sekarang</a>
+            </div>
+            <div class="product">
+                <img src="/api/placeholder/300/200" alt="Produk 1">
+                <h3>Produk 1</h3>
+                <p>Deskripsi produk 1 di sini.</p>
+                <p class="harga">Harga: Rp 100.000</p>
+                <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%201%20yang%20dijual" class="whatsapp-button" target="_blank">Beli Sekarang</a>
+            </div>
+            <div class="product">
+                <img src="/api/placeholder/300/200" alt="Produk 2">
+                <h3>Produk 2</h3>
+                <p>Deskripsi produk 2 di sini.</p>
+                <p class="harga">Harga: Rp 150.000</p>
+                <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%202%20yang%20dijual" class="whatsapp-button" target="_blank">Beli Sekarang</a>
+            </div>
+            <div class="product">
+                <img src="/api/placeholder/300/200" alt="Produk 3">
+                <h3>Produk 3</h3>
+                <p>Deskripsi produk 3 di sini.</p>
+                <p class="harga">Harga: Rp 150.000</p>
+                <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%203%20yang%20dijual" class="whatsapp-button" target="_blank">Beli Sekarang</a>
+            </div>
+            <div class="product">
+                <img src="/api/placeholder/300/200" alt="Produk 4">
+                <h3>Produk 4</h3>
+                <p>Deskripsi produk 4 di sini.</p>
+                <p class="harga">Harga: Rp 150.000</p>
+                <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Produk%204%20yang%20dijual" class="whatsapp-button" target="_blank">Beli Sekarang</a>
+            </div>
+        </div>
+        <a href="javascript:history.back()" class="back-button">Kembali</a>
+    </div>
+    
+</body>
+</html>
+
+
+    <footer>
+        <p>&copy; 2024 Toko Online Sederhana. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
